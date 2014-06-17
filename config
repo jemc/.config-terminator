@@ -1,0 +1,133 @@
+[global_config]
+  window_state = maximise
+  handle_size = 0
+  title_hide_sizetext = True
+  dbus = True
+  focus = mouse
+  sticky = True
+  title_inactive_fg_color = "#501814"
+  borderless = True
+  enabled_plugins = InactivityWatch, ActivityWatch, TerminalShot, LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  title_transmit_bg_color = "#000810"
+  hide_from_taskbar = True
+  title_inactive_bg_color = "#000810"
+[keybindings]
+[profiles]
+  [[default]]
+    background_image = /home/joemac/Pictures/Madrid_lamp.jpg
+    visible_bell = True
+    background_darkness = 0.87
+    scrollback_lines = 2048
+    background_type = transparent
+    cursor_color = "#a84747"
+    foreground_color = "#e9b95a"
+    use_custom_command = True
+    custom_command = 'bash --login -c "fish"'
+    font = Sans 10
+    audible_bell = True
+  [[blue]]
+    background_image = None
+    background_darkness = 0.9
+    background_type = transparent
+    cursor_color = "#8ce4be"
+    foreground_color = "#84b8de"
+    use_custom_command = True
+    custom_command = 'bash --login -c "fish"'
+    background_color = "#00000e"
+  [[purple]]
+    background_image = None
+    background_darkness = 0.9
+    background_type = transparent
+    cursor_color = "#c36f82"
+    foreground_color = "#af84d5"
+    background_color = "#050014"
+  [[green]]
+    background_image = None
+    visible_bell = True
+    background_darkness = 0.92
+    scrollback_lines = 2048
+    background_type = transparent
+    cursor_color = "#e6d393"
+    foreground_color = "#a7df64"
+    use_custom_command = True
+    custom_command = 'bash --login -c "fish"'
+    background_color = "#000e00"
+    audible_bell = True
+  [[red]]
+    background_image = None
+    visible_bell = True
+    background_darkness = 0.89
+    audible_bell = True
+    background_type = transparent
+    cursor_color = "#ffc400"
+    foreground_color = "#e8985e"
+    use_custom_command = True
+    custom_command = 'bash --login -c "fish"'
+    font = msam10 14
+    background_color = "#130000"
+[layouts]
+  [[default]]
+    [[[child0]]]
+      position = 30:30
+      type = Window
+      order = 0
+      parent = ""
+      size = 1306, 708
+    [[[child1]]]
+      position = 360
+      type = VPaned
+      order = 0
+      parent = child0
+    [[[child2]]]
+      position = 649
+      type = HPaned
+      order = 0
+      parent = child1
+    [[[terminal3]]]
+      profile = green
+      type = Terminal
+      order = 0
+      parent = child2
+    [[[terminal5]]]
+      profile = red
+      type = Terminal
+      order = 1
+      parent = child1
+    [[[terminal4]]]
+      profile = blue
+      type = Terminal
+      order = 1
+      parent = child2
+  [[three]]
+    [[[child0]]]
+      position = 30:30
+      type = Window
+      order = 0
+      parent = ""
+      size = 1306, 708
+    [[[child1]]]
+      position = 360
+      type = VPaned
+      order = 0
+      parent = child0
+    [[[child2]]]
+      position = 649
+      type = HPaned
+      order = 0
+      parent = child1
+    [[[terminal3]]]
+      profile = green
+      type = Terminal
+      order = 0
+      parent = child2
+    [[[terminal5]]]
+      profile = red
+      type = Terminal
+      order = 1
+      parent = child1
+    [[[terminal4]]]
+      profile = blue
+      type = Terminal
+      order = 1
+      parent = child2
+[plugins]
